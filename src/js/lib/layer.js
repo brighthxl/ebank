@@ -21,6 +21,7 @@ define(function() {
         $body = $('body')
         $body.append(winBg).append(win)
         $win.resize(resize)
+        winBg.click(close);
     }
 
     function open(txt, closeCallback) {

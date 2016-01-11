@@ -35,7 +35,7 @@ html
 					img(src="static/img/logo.png")
 			dl.login.right
 				dt
-					a(href="") 登录
+					a(href="javascript:layer($('#J_login'));") 登录
 				dd
 					a(href="") 注册
 			dl.islogin.right
@@ -43,33 +43,34 @@ html
 					img(src="", alt="")
 				dd
 					a(href="") 我的账户
-		.p-login
-			form
-				h2 登录
-				p.err.cRed 用户名与密码不匹配，请重新输入。
-				.item
-					input(type="text")
-					span 请输入手机号／邮箱
-				.item
-					input(type="password")
-					span 请输入密码
-				dl.code
-					dt
+		div.none
+			.p-login#J_login
+				form
+					h2 登录
+					p.err.cRed 用户名与密码不匹配，请重新输入。
+					.item
 						input(type="text")
-						span 请输入验证码
-					dd
-						img(src="", alt="")
-				dl.remember
-					dt
-						input(type="checkbox")
-						label 记住用户名
-					dd
-						a.cBlue 忘记密码
-				.button
-					a.u-button 登录
-				.signup
-					|没有账号？ 
-					a.cBlue 免费注册
+						span 请输入手机号／邮箱
+					.item
+						input(type="password")
+						span 请输入密码
+					dl.code
+						dt
+							input(type="text")
+							span 请输入验证码
+						dd
+							img(src="", alt="")
+					dl.remember
+						dt
+							input(type="checkbox")
+							label 记住用户名
+						dd
+							a.cBlue 忘记密码
+					.button
+						a.u-button 登录
+					.signup
+						|没有账号？ 
+						a.cBlue 免费注册
 
 
 			

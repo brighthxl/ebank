@@ -36,6 +36,7 @@ var layer = define(function() {
         $body = $('body')
         $body.append(winBg).append(win)
         $win.resize(resize)
+        winBg.click(close);
     }
 
     function open(txt, closeCallback) {
@@ -124,3 +125,14 @@ var tmpl = define(function() {
     }
 })
 
+
+$('#J_login').on('keyup', 'input', function(event) {
+	//event.preventDefault();
+	var _this = $(this)
+	var _next = _this.next()
+	if($.trim(_this.val())){
+		_next.hide()
+	}else{
+		_next.show()
+	}
+});
