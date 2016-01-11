@@ -1,0 +1,334 @@
+extend tmpl/tmpl
+
+//. 页面配置
+block config
+	-var title = "首页"
+	-var cssname ="index"
+	-var jsname = "index"
+	-var index = true
+	
+block content
+	.m-foc
+		ul.foc#foc
+			li(background='#d92621 url(static/img/index_foc.jpg) center 0 no-repeat')
+				a(target="_blank" ,href="")
+			li(background='#d92621 url(http://jindanlicai.com/static/img/foc_002.png) center 0 no-repeat')
+				a(target="_blank" ,href="")
+			li(background='#d92621 url(http://jindanlicai.com/static/img/foc_003.png) center 0 no-repeat')
+				a(target="_blank" ,href="")
+
+		p#arw.arw
+	.m-flag.p-w
+		.list
+			dl
+				dt A
+				dd
+					strong.f16 安全
+					p 100％本金保障<br>资金银行监管
+			dl
+				dt B
+				dd
+					strong.f16 安全
+					p 100％本金保障<br>资金银行监管
+			dl
+				dt C
+				dd
+					strong.f16 安全
+					p 100％本金保障<br>资金银行监管
+			dl
+				dt D
+				dd
+					strong.f16 安全
+					p 100％本金保障<br>资金银行监管
+	.g-content
+		.m-note.p-w
+			dl.left.list
+				dt 易BANK公告
+				dd
+					ul
+						li
+							a.cRed(href="") ”年终奖“ 来袭！双节HIGH起来！！
+							span 2015.12.18
+						li
+							a(href="") ”年终奖“ 来袭！双节HIGH起来！！
+							span 2015.12.18
+						li
+							a(href="") ”年终奖“ 来袭！双节HIGH起来！！
+							span 2015.12.18
+						li
+							a(href="") ”年终奖“ 来袭！双节HIGH起来！！
+							span 2015.12.18
+			.more.right
+				a.cGray(href="") 更多公告 >
+
+		.m-newer.p-w
+			.sup
+				img(src="static/img/index_newer.png", alt="")
+			.financial
+				dl.title
+					dt.f22 新手标[20151231-01]
+					dd
+						a.cBlue(href="") 100元起投，限投5000元
+				ul.detail
+					li.number
+						|年化收益
+						span.f18.cRed
+							em 20
+							| %
+					li.days
+						|项目期限
+						span.f18
+							em 30
+							| 天
+					li.progress
+						em.cRed 75%
+					li.button
+						a.u-button(href="") 立即投资
+			.help.right
+				a(href="")
+					img(src="static/img/index_newer_help.jpg", alt="")
+		.m-title.p-w
+			strong.f24 易产品
+			| 帮您选择对的
+
+		.m-buylist.p-w
+			.item
+				.bg01.cWhite
+					h3.f22 央票通
+					ul.f16
+						li
+							a(href="") 央企支付信用
+						li
+							a(href="") 应收帐款
+						li
+							a(href="") 双向闭环
+						li
+							a(href="") 全程监控
+						li
+							a(href="") 到期还本付息
+					p
+						a(href="") 产品详情
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							a.u-button(href="") 立即投资
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							a.u-button(href="") 立即投资
+			.item
+				.cWhite.bg02
+					h3.f22 融租通
+					ul.f16
+						li
+							a(href="") 央企支付信用
+						li
+							a(href="") 应收帐款
+						li
+							a(href="") 双向闭环
+						li
+							a(href="") 全程监控
+						li
+							a(href="") 到期还本付息
+					p
+						a(href="") 产品详情
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							a.u-button(href="") 立即投资
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							a.u-button(href="") 立即投资
+			.item
+				.cWhite.bg03
+					h3.f22 商信通
+					ul.f16
+						li
+							a(href="") 央企支付信用
+						li
+							a(href="") 应收帐款
+						li
+							a(href="") 双向闭环
+						li
+							a(href="") 全程监控
+						li
+							a(href="") 到期还本付息
+					p
+						a(href="") 产品详情
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							a.u-button(href="") 立即投资
+				.row
+					dl.title
+						dt
+							a.f20 央票通[1022]央企·国电南瑞支付担保融资第1期
+						dd
+							em
+								span
+							p 65.24%
+					ul
+						li.t1 年化收益
+							span.cRed 9.5%
+						li.t2 项目期限
+							span 180
+							|天
+						li.t3 金额
+							span 100
+							|万
+						li.button
+							em.u-button-2(href="") 还款中
+		.m-news.p-w
+			.list
+				.item
+					dl
+						dt.f18 媒体报道
+						dd 
+							a.cRed(href="") 更多
+					ul.f12
+						li
+							span o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+				.item
+					dl
+						dt.f18 项目公告
+						dd 
+							a.cRed(href="") 更多
+					ul.f12
+						li
+							span.blue o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.blue o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.blue o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.blue o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+				.item
+					dl
+						dt.f18 公司公告
+						dd 
+							a.cRed(href="") 更多
+					ul.f12
+						li
+							span.red o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.red o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.red o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+						li
+							span.red o
+							a(href="") 习近平在世界互联网大会开幕式上发表主旨演讲
+		dl.m-partner.p-w
+			dt.f18 合作伙伴
+			dd
+				ul
+					li
+						a(href="")
+							img(src="static/img/index_fr01.jpg", alt="")
+					li
+						a(href="")
+							img(src="static/img/index_fr02.jpg", alt="")
+					li
+						a(href="")
+							img(src="static/img/index_fr03.jpg", alt="")
+		.m-frlink.f12.p-w
+			|友情链接：
+			a 山东金融资产交易中心
+			a 山东金融资产交易中心
+
+		
+
+
+

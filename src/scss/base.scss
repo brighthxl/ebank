@@ -1,0 +1,258 @@
+@import 'lib/_public';
+body{
+    font-size: 14px;color:$black;
+}
+
+a {
+    color: $gray;cursor: pointer;
+    &:hover {
+        color: $hover;
+    }
+}
+
+em{font-style: normal;}
+
+.block{display: block;}
+.none{display: none;}
+.left{float: left;}
+.right{float: right;}
+.fa{font-family:Arial}
+
+@include setColor(cRed,$red)
+@include setColor(cBlue,$blue)
+@include setColor(cGray,$gray)
+@include setColor(cWhite,#fff)
+@include setColor(cBlack,$black)
+
+@include fontSize(f12, 12px);
+@include fontSize(f14, 14px);
+@include fontSize(f16, 16px);
+@include fontSize(f18, 18px);
+@include fontSize(f20, 20px);
+@include fontSize(f22, 22px);
+@include fontSize(f24, 24px);
+@include fontSize(f26, 26px);
+@include fontSize(f28, 28px);
+
+
+
+
+
+.p-w{
+    width: $width;margin: auto;
+}
+
+.p-toper {
+    height: 36px;background: #f9f9f9;border-bottom: 1px solid $border;
+    .content {
+        dt {
+            line-height: 36px;
+        }
+        dd {
+            em{
+                display: inline-block;line-height: 36px;padding:0 19px;border-left: 1px solid $border;
+            }
+        }
+        .app {
+
+        }
+        .help {
+
+        }
+        .msg {
+            span{
+                background: $red;display: inline-block;color:#fff;line-height: 18px;padding:0 6px;border-radius: 10px;margin-left: 3px;
+            }
+        }
+        .uname {
+            border-left: none;
+        }
+    }
+
+}
+.p-header {
+    height: 76px;
+    .logo {
+        padding-top: 14px;
+    }
+    .login {
+        float: right;padding-top: 22px;width: 162px;overflow: hidden;
+        dt,dd{
+            float: left;
+        }
+        dd{
+            position: relative;margin-left: -1px;
+        }
+        a{
+            display: block;line-height: 32px;width: 79px;text-align: center;border:1px solid $border;@include tran();
+            &:hover{
+                background: $red;color: #fff;border:1px solid $red;
+            }
+        }
+    }
+    .islogin{
+        padding-top: 28px;width: 155px;
+        dt{
+
+        }
+        dd{
+
+        }
+    }
+}
+
+
+.p-login{
+    position: absolute;top:400px;left: 100px;z-index: 100;padding:22px 25px;width: 262px;overflow: hidden;background: #fff;
+    h2{
+        height: 24px;font-size: 16px;font-weight: 400;
+    }
+    .err{
+        height: 20px;
+    }
+    .item{
+        height: 60px;position: relative;
+        input,span{
+            width: 260px;height: 30px;border:1px solid $border;padding:5px 0;line-height: 30px;text-indent: 8px;display: block;border-radius: 7px;
+        }
+        input{
+            position: absolute;left: 0;top:0;border:1px solid $border;background: none;
+        }
+        span{
+            color: #cdcdcd;
+        }
+    }
+    .code{
+        height: 60px;
+        dt{
+            position: relative;float: left;
+            input,span{
+                width: 160px;height: 30px;border:1px solid $border;padding:5px 0;line-height: 30px;text-indent: 8px;display: block;border-radius: 7px;
+            }
+            input{
+                position: absolute;left: 0;top:0;border:1px solid $border;background: none;
+            }
+            span{
+                color: #cdcdcd;
+            }
+        }
+        dd{
+            float: right;width: 94px;
+            img{
+               width: 94px;height: 40px; 
+            }
+        }
+    }
+
+    .remember{
+        height: 30px;width: 262px;overflow: hidden;
+        dt{
+            float: left;vertical-align: middle;
+            input{
+                vertical-align: middle;
+            }
+            label{
+                color:#8b8b8b;display: inline-block;vertical-align: middle;
+            }
+        }
+        dd{
+            float: right;
+
+        }
+    }
+    .button{
+        height: 56px;
+        a{
+            width: 262px;
+        }
+    }
+    .signup{
+        text-align: center;
+    }
+}
+
+
+    
+.p-menu{
+    background: $red;
+    ul{
+        overflow: hidden;
+    }
+    li{
+        float: left;
+    }
+    a{
+        display:block;width: 128px;height: 46px;line-height: 46px;text-align: center;color:#fff;@include tran();
+        &.on,&:hover{
+            background: $hover;
+        }
+    }
+}
+.p-footer{
+    background: #e2e2e2;
+    .content{
+        overflow: hidden;
+    }
+    .flag{
+        width: 145px;padding-top: 28px;
+    }
+    .option{
+        padding-top: 28px;width: 582px;overflow: hidden;
+    }
+    .link{
+        width: 100%;overflow: hidden;height: 90px;
+        dt{
+            width: 358px;overflow: hidden;float: left;
+        }
+        dd{
+            float: left;color: #505050;
+            strong{
+                display: block;font-size: 16px;height: 32px;
+            }
+        }
+        ul{
+            width: 360px;
+        }
+        li{
+            width: 90px;height: 32px;float: left;
+        }
+    }
+
+    .copyright{
+        height: 30px;
+    }
+    .safe{
+        text-align: right;padding-bottom: 28px;
+    }
+    .code{
+        border-left: 1px solid #bbb;margin-top: 20px;width: 202px;padding-left: 28px;
+        ul{
+            width: 180px;overflow: hidden;
+        }
+        li{
+            width: 60px;float: left;height: 53px;font-size: 40px;
+        }
+        dl{
+
+        }
+        dt{
+            height: 35px;
+        }
+        dd{
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.u-button,.u-button-2{
+    background: $red;@include tran();display: inline-block;width: 115px;line-height: 36px;text-align: center;border-radius: 5px;color: #fff;height: 36px;
+}
+.u-button:hover{
+    background: $hover;color: #fff;
+}
+
+.u-button-2{
+    background: #e3e3e3;color:#7d7d7d;
+}

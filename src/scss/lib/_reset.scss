@@ -1,0 +1,36 @@
+/* reset */
+//html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, 
+img, dl, dt, dd, ol, ul, li,form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+img { border:0;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif
+}
+
+.htmlie{
+	body{
+		font-family: 'Microsoft yahei','微软雅黑', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	}
+}
+a, img {
+    -webkit-touch-callout: none;text-decoration:none;
+}

@@ -1,0 +1,139 @@
+block config
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		link(rel="icon" type="image/png" href="static/img/favicon.ico")
+		if title
+			title #{title}-易BANK-专业的供应链融资平台
+		meta(name="keywords" content="#{title.split('-')}")
+		meta(name="description" content="易BANK,专业的供应链融资平台")
+		link(href="#{static}/css/base.css?=#{version}" rel="stylesheet")
+		if cssname
+			link(href="#{static}/css/#{cssname}.css?=#{version}" rel="stylesheet")
+		block head
+	body
+		block header
+		.p-toper
+			dl.p-w.content
+				dt.left 客服电话:4006-405-258
+				dd.right
+					em.uname
+						a.cRed(href="") TOM
+						|，您好
+					em.msg
+						a(href="") 消息
+							span 10
+					em.help
+						a(href="") 帮助中心
+					em.app
+						a(href="") 手机客户端
+		.p-header.p-w
+			.logo.left
+				a(href="")
+					img(src="static/img/logo.png")
+			dl.login.right
+				dt
+					a(href="") 登录
+				dd
+					a(href="") 注册
+			dl.islogin.right
+				dt
+					img(src="", alt="")
+				dd
+					a(href="") 我的账户
+		.p-login
+			form
+				h2 登录
+				p.err.cRed 用户名与密码不匹配，请重新输入。
+				.item
+					input(type="text")
+					span 请输入手机号／邮箱
+				.item
+					input(type="password")
+					span 请输入密码
+				dl.code
+					dt
+						input(type="text")
+						span 请输入验证码
+					dd
+						img(src="", alt="")
+				dl.remember
+					dt
+						input(type="checkbox")
+						label 记住用户名
+					dd
+						a.cBlue 忘记密码
+				.button
+					a.u-button 登录
+				.signup
+					|没有账号？ 
+					a.cBlue 免费注册
+
+
+			
+		.p-menu.f18
+			ul.content.p-w
+				li
+					a(href="" class=index?"on":"") 首页
+				li
+					a(href="" class=financial?"on":"") 我要理财
+				li
+					a(href="" class=novice?"on":"") 新手指导
+				li
+					a(href="" class=safe?"on":"") 安全保障
+				li
+					a(href="" class=help?"on":"") 帮助中心
+				li
+					a(href="" class=about?"on":"") 关于我们
+		
+		block content
+		.p-footer
+			.content.p-w.f12
+				.flag.left
+					img(src="static/img/base_icon01.png", alt="")
+				.option.left
+					dl.link
+						dt
+							ul
+								li
+									a(href="") 关于我们
+								li
+									a(href="") 政策法规
+								li
+									a(href="") 安全保障
+								li
+									a(href="") 网站地图
+								li
+									a(href="") 平台介绍
+								li
+									a(href="") 充值提现
+								li
+									a(href="") 资费说明
+								li
+									a(href="") 联系我们
+						dd
+							strong 服务热线 : 400-640-5258 
+							|(工作日9:00 - 18:00)
+					.copyright
+						| © 2015 易BANK All rights reserved | 上海易办互联网金融信息服务有限公司 | 沪ICP备15000996号 
+					.safe
+						img(src="static/img/base_icon04.png", alt="")
+				.code.right
+					ul
+						li
+							a(href="") Q
+						li
+							a(href="") W
+						li
+							a(href="") S
+					dl
+						dt 手机客户端
+						dd
+							img(src="static/img/base_icon03.png", alt="")
+							img(src="static/img/base_icon02.png", alt="")
+		script(src="#{static}/js/base.js?=#{version}")
+		if jsname
+			script(src="#{static}/js/#{jsname}.js?=#{version}")
+		block footer

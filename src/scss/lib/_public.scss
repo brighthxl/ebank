@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import '_reset';
+
+$red:#e35253;
+$border:#e9e9e9;
+$black:#222;
+$background: #efeff4;
+$blue : #0081e1;
+$blue2 : #00a8ff;
+$gray : #737373;
+$gray2 : #888;
+$gray3 : #a8a8a8;
+$gray4 : #c1c1c1;
+$orange : #ff5b46;
+$hover:#d43835;
+$width : 1000px;
+
+@mixin tran($p:all, $t:0.5s, $f:ease) {
+    -webkit-transition: $p $t $f;
+    -moz-transition: $p $t $f;
+    -o-transition: $p $t $f;
+    transition: $p $t $f;
+}
+
+@mixin setColor($class, $color){
+    .#{$class},.#{$class} a{
+        color:$color;
+    }
+    a.#{$class}:hover,.#{$class} a:hover{
+        color:$hover;
+    }
+}
+
+
+@mixin fontSize($class, $size) {
+    .#{$class} {
+        font-size: $size;
+    }
+}
