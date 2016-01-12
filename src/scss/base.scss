@@ -35,7 +35,13 @@ em{font-style: normal;}
 @include fontSize(f28, 28px);
 
 
-
+@font-face {font-family: "iconfont";
+  src: url('../img/iconfont.eot'); /* IE9*/
+  src: url('../img/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../img/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../img/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../img/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
 
 
 .p-w{
@@ -222,6 +228,18 @@ em{font-style: normal;}
         height: 30px;
     }
     .safe{
+        a{
+            display: inline-block;width: 65px;height: 30px;background: url(../img/base_icon04.png);@include tran();
+            &:hover{
+                background-position: 0 -30px;
+            }
+            &.a2{
+                width: 82px;background-position: -65px 0;margin-left: 10px;
+                &:hover{
+                    background-position: -65px -30px;
+                }
+            }
+        }
         text-align: right;padding-bottom: 28px;
     }
     .code{
@@ -230,7 +248,7 @@ em{font-style: normal;}
             width: 180px;overflow: hidden;
         }
         li{
-            width: 60px;float: left;height: 53px;font-size: 40px;
+            width: 60px;float: left;height: 53px;font-size: 40px;font-family: "iconfont";
         }
         dl{
 
