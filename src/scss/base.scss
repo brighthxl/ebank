@@ -85,7 +85,7 @@ em{font-style: normal;}
         }
         a{
             display: block;line-height: 32px;width: 79px;text-align: center;border:1px solid $border;@include tran();
-            &:hover{
+            &:hover,&.on{
                 background: $red;color: #fff;border:1px solid $red;
             }
         }
@@ -225,7 +225,7 @@ em{font-style: normal;}
         text-align: right;padding-bottom: 28px;
     }
     .code{
-        border-left: 1px solid #bbb;margin-top: 20px;width: 202px;padding-left: 28px;
+        border-left: 1px solid #bbb;margin-top: 20px;width: 202px;padding-left: 28px;overflow: hidden;
         ul{
             width: 180px;overflow: hidden;
         }
@@ -236,11 +236,15 @@ em{font-style: normal;}
 
         }
         dt{
-            height: 35px;
+            height: 30px;
         }
         dd{
-            img{
-                margin-right: 20px;
+            width: 100%;overflow: hidden;
+            div{
+                width: 88px;float: left;
+                strong{
+                    display: block;text-align: center;width: 68px;
+                }
             }
         }
     }

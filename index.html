@@ -7,8 +7,12 @@
     <title>首页-易BANK-专业的供应链融资平台</title>
     <meta name="keywords" content="首页">
     <meta name="description" content="易BANK,专业的供应链融资平台">
-    <link href="static/css/base.css?=1452480186955" rel="stylesheet">
-    <link href="static/css/index.css?=1452480186955" rel="stylesheet">
+    <link href="static/css/base.css?=1452570746330" rel="stylesheet">
+    <link href="static/css/index.css?=1452570746330" rel="stylesheet">
+    <script>
+      var loginType = 1
+      
+    </script>
   </head>
   <body>
     <div class="p-toper">
@@ -20,7 +24,7 @@
     <div class="p-header p-w">
       <div class="logo left"><a href=""><img src="static/img/logo.png"></a></div>
       <dl class="login right">
-        <dt><a href="javascript:layer($('#J_login'));">登录</a></dt>
+        <dt><a href="javascript:;" onclick="login(this);">登录</a></dt>
         <dd><a href="">注册</a></dd>
       </dl>
       <dl class="islogin right">
@@ -28,47 +32,47 @@
         <dd><a href="">我的账户</a></dd>
       </dl>
     </div>
-    <div class="none">
-      <div id="J_login" class="p-login">
-        <form>
-          <h2>登录</h2>
-          <p class="err cRed">用户名与密码不匹配，请重新输入。</p>
-          <div class="item">
-            <input type="text"><span>请输入手机号／邮箱</span>
-          </div>
-          <div class="item">
-            <input type="password"><span>请输入密码</span>
-          </div>
-          <dl class="code">
-            <dt>
-              <input type="text"><span>请输入验证码</span>
-            </dt>
-            <dd><img src="" alt=""></dd>
-          </dl>
-          <dl class="remember">
-            <dt>
-              <input type="checkbox">
-              <label>记住用户名</label>
-            </dt>
-            <dd><a class="cBlue">忘记密码</a></dd>
-          </dl>
-          <div class="button"><a class="u-button">登录</a></div>
-          <div class="signup">没有账号？ <a class="cBlue">免费注册</a></div>
-        </form>
-      </div>
+    <div id="J_login" class="p-login none">
+      <form>
+        <h2>登录</h2>
+        <p class="err cRed">用户名与密码不匹配，请重新输入。</p>
+        <div class="item">
+          <input type="text"><span>请输入手机号／邮箱</span>
+        </div>
+        <div class="item">
+          <input type="password"><span>请输入密码</span>
+        </div>
+        <dl class="code">
+          <dt>
+            <input type="text"><span>请输入验证码</span>
+          </dt>
+          <dd><img src="" alt=""></dd>
+        </dl>
+        <dl class="remember">
+          <dt>
+            <input type="checkbox">
+            <label>记住用户名</label>
+          </dt>
+          <dd><a class="cBlue">忘记密码</a></dd>
+        </dl>
+        <div class="button"><a class="u-button">登录</a></div>
+        <div class="signup">没有账号？ <a class="cBlue">免费注册</a></div>
+      </form>
     </div>
     <div class="p-menu f18">
       <ul class="content p-w">
-        <li><a href="" class="on">首页</a></li>
-        <li><a href="">我要理财</a></li>
-        <li><a href="">新手指导</a></li>
+        <li><a href="index.html" class="on">首页</a></li>
+        <li><a href="list.html">我要理财</a></li>
+        <li><a href="about.html">新手指导</a></li>
         <li><a href="">安全保障</a></li>
         <li><a href="">帮助中心</a></li>
-        <li><a href="">关于我们</a></li>
+        <li><a href="about-gaikuang.html">关于我们</a></li>
       </ul>
     </div>
     <div class="m-foc">
       <ul id="foc" class="foc">
+        <li background="#d92621 url(static/img/index_foc.jpg) center 0 no-repeat"><a target="_blank" href=""></a></li>
+        <li background="#d92621 url(static/img/index_foc.jpg) center 0 no-repeat"><a target="_blank" href=""></a></li>
         <li background="#d92621 url(static/img/index_foc.jpg) center 0 no-repeat"><a target="_blank" href=""></a></li>
       </ul>
       <p id="arw" class="arw"></p>
@@ -266,7 +270,7 @@
               <dd> <a href="" class="cRed">更多</a></dd>
             </dl>
             <ul class="f12">
-              <li><span>o</span><a href="">习近平在世界互联网大会开幕式上发表主旨演讲</a></li>
+              <li><span>o</span><a href="">习近平在世界互联网大会开幕式上发表主旨演讲习近平在世界互联网大会开幕式上发表主旨演讲</a></li>
               <li><span>o</span><a href="">习近平在世界互联网大会开幕式上发表主旨演讲</a></li>
               <li><span>o</span><a href="">习近平在世界互联网大会开幕式上发表主旨演讲</a></li>
               <li><span>o</span><a href="">习近平在世界互联网大会开幕式上发表主旨演讲</a></li>
@@ -340,12 +344,15 @@
           </ul>
           <dl>
             <dt>手机客户端</dt>
-            <dd><img src="static/img/base_icon03.png" alt=""><img src="static/img/base_icon02.png" alt=""></dd>
+            <dd>
+              <div><img src="static/img/base_icon03.png" alt=""><strong>IOS</strong></div>
+              <div><img src="static/img/base_icon02.png" alt=""><strong>Android</strong></div>
+            </dd>
           </dl>
         </div>
       </div>
     </div>
-    <script src="static/js/base.js?=1452480186955"></script>
-    <script src="static/js/index.js?=1452480186955"></script>
+    <script src="static/js/base.js?=1452570746330"></script>
+    <script src="static/js/index.js?=1452570746330"></script>
   </body>
 </html>

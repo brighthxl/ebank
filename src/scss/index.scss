@@ -226,7 +226,7 @@
 			padding-top: 15px;
 		}
 		li{
-			height: 26px;padding-left: 22px;white-space: nowrap;overflow: hidden;
+			height: 26px;padding-left: 22px;white-space: nowrap;overflow: hidden;width: 280px;text-overflow:ellipsis;
 			span{
 				margin-right: 10px;color:#ffb067;
 				&.blue{

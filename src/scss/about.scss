@@ -33,7 +33,7 @@
 		dl{
 			width: 760px;overflow: hidden;height: 38px;
 			dt{
-				float: left;
+				float: left;width: 590px;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;
 			}
 			dd{
 				float: right;

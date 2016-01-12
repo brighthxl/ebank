@@ -32,7 +32,7 @@
                 'background': tmp.attr('background')
             }).animate({
                     'opacity': 1
-                }, 1000,
+                }, 600,
                 function() {
                     img.eq(cur).css({
                         'z-index': 0
@@ -45,7 +45,7 @@
                         5000)
                 })
         }
-        tip.click(function() {
+        tip.mouseover(function() {
             clearTimeout(fn);
             _move($(this).index())
         });
