@@ -32,13 +32,18 @@
 	dl{
 		width: 250px;float: left;padding-top: 13px;overflow: hidden;
 		dt{
-			float: left;width: 90px;height: 90px;font-size: 64px;color:$red;font-family: "iconfont";
+			float: left;width: 90px;height: 90px;font-size: 64px;color:$red;font-family: "iconfont";@include tran();
 		}
 		dd{
 			strong{
 				color: #909090;display: block;height: 29px;
 			}
 			float: left;width: 150px;color: #9c9c9c;
+		}
+		&:hover{
+			dt{
+				margin-top: -5px;
+			}
 		}
 	}
 }
@@ -68,6 +73,7 @@
 		}
 	}
 }
+
 
 .m-newer{
 	position: relative;height:148px;background: #fff;
@@ -104,8 +110,29 @@
 				&.progress{
 					width: 125px;
 					em{
-						font-size: 14px;display:block;background: #ccc;width: 55px;height: 55px;text-align: center;line-height: 55px;
+						background:url(../img/index_progress.png) no-repeat;background-position: 0 -784px;font-size: 14px;display:block;width:56px;height:56px;text-align: center;line-height: 56px;
 					}
+					.em14{background-position: 0 0;}
+					.em15{background-position: 0 -56px;}
+					.em13{background-position: 0 -112px;}
+					.em11{background-position: 0 -168px;}
+					.em12{background-position: 0 -224px;}
+					.em19{background-position: 0 -280px;}
+					.em20{background-position: 0 -336px;}
+					.em18{background-position: 0 -392px;}
+					.em16{background-position: 0 -448px;}
+					.em17{background-position: 0 -504px;}
+					.em10{background-position: 0 -560px;}
+					.em3{background-position: 0 -616px;}
+					.em4{background-position: 0 -672px;}
+					.em2{background-position: 0 -728px;}
+					.em0{background-position: 0 -784px;}
+					.em1{background-position: 0 -840px;}
+					.em8{background-position: 0 -896px;}
+					.em9{background-position: 0 -952px;}
+					.em7{background-position: 0 -1008px;}
+					.em5{background-position: 0 -1064px;}
+					.em6{background-position: 0 -1120px;}
 				}
 				&.button{
 					padding-top: 18px;
@@ -141,7 +168,10 @@
 			padding-left: 26px;
 		}
 		li{
-			height: 36px;
+			height: 36px;@include tran();
+			&:hover{
+				text-indent: 5px;
+			}
 		}
 		p{
 			text-align: right;padding-right: 14px;
@@ -196,7 +226,7 @@
 			em{
 				width: 116px;height: 6px;background:#f0f0f0;overflow: hidden;display: block;border-radius: 2px;
 				span{
-					background: $red;display: block;height: 100%;width:30%;
+					background: $red;display: block;height: 100%;width:1%;@include tran();
 				}
 			}
 			p{

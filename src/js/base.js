@@ -8,6 +8,9 @@ var define = define || function() {
         }
     }
 }
+
+define.prototype.amd = true;
+
 var loginType = loginType || 0
 var layer = EB_GET('lib/layer.js')
 var tmpl = EB_GET('lib/tmpl.js')
@@ -53,4 +56,29 @@ var tmpl = EB_GET('lib/tmpl.js')
     })
 
     window['login'] = login
+}()
+
+! function() {
+    var source = $('#J_islogin')
+    var menu = $('#J_islogin_layer')
+    var timer = null
+
+    function show() {
+        clearTimeout(timer)
+        var pos = source.offset()
+        menu.css({
+            top:pos.top + source.height(),
+            left : pos.left,
+        }).slideDown();
+    }
+
+    function hide() {
+        timer = setTimeout(function() {
+            menu.slideUp()
+        },100)
+    }
+
+    source.hover(show,hide)
+    menu.hover(show,hide) 
+    console.log(source,menu)
 }()

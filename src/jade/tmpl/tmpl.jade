@@ -17,7 +17,9 @@ html
 		block header
 		.p-toper
 			dl.p-w.content
-				dt.left 客服电话:4006-405-258
+				dt.left 
+					span &#xe602;
+					|客服电话:4006-405-258
 				dd.right
 					em.uname
 						a.cRed(href="") TOM
@@ -28,7 +30,9 @@ html
 					em.help
 						a(href="") 帮助中心
 					em.app
-						a(href="") 手机客户端
+						a(href="") 
+							span &#xe64a;
+							|手机客户端
 		.p-header.p-w
 			.logo.left
 				a(href="")
@@ -38,9 +42,8 @@ html
 					a(href="javascript:;" onclick="login(this);") 登录
 				dd
 					a(href="") 注册
-			dl.islogin.right
-				dt
-					img(src="", alt="")
+			dl.islogin.right#J_islogin
+				dt &#xe613;
 				dd
 					a(href="") 我的账户
 		.p-login.none#J_login
@@ -70,7 +73,11 @@ html
 				.signup
 					|没有账号？ 
 					a.cBlue 免费注册
-
+		.p-islogin.none#J_islogin_layer
+			a(href="") 进入账户
+			a(href="") 充值
+			a(href="") 提现
+			a(href="") 退出
 
 			
 		.p-menu.f18

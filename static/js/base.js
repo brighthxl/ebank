@@ -13,6 +13,9 @@ var define = define || function() {
         }
     }
 }
+
+define.prototype.amd = true;
+
 var loginType = loginType || 0
 var layer = define(function() {
     var style = ".WINBG{height:100%;width:100%;position:fixed;left:0;top:0;z-index:1000;display:none;overflow:hidden;background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#0F000000,endColorstr=#0F000000)}.WINBG iframe{height:2000px;width:100%;filter:alpha(opacity=0);opacity:0}.WINBG div{width:100%;height:100%;background:#000;position:absolute;left:0;top:0;z-index:2;filter:alpha(opacity=30);opacity:0.3}.WIN{border:1px solid #666;z-index:1001;box-shadow:0 0 10px rgba(0,0,0,0.5);position:fixed;top:-1000px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background:#FFF;overflow:hidden}.WIN iframe{border:0;overflow:hidden;background:#FFF;width:100%;height:100%}"
@@ -168,4 +171,29 @@ var tmpl = define(function() {
     })
 
     window['login'] = login
+}()
+
+! function() {
+    var source = $('#J_islogin')
+    var menu = $('#J_islogin_layer')
+    var timer = null
+
+    function show() {
+        clearTimeout(timer)
+        var pos = source.offset()
+        menu.css({
+            top:pos.top + source.height(),
+            left : pos.left,
+        }).slideDown();
+    }
+
+    function hide() {
+        timer = setTimeout(function() {
+            menu.slideUp()
+        },100)
+    }
+
+    source.hover(show,hide)
+    menu.hover(show,hide) 
+    console.log(source,menu)
 }()

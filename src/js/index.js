@@ -1,4 +1,5 @@
-
+var movehtml = EB_GET('lib/movehtml.js')
+var countUp = EB_GET('lib/countUp.js')
 
 ! function() {
     function focuImg(json) {
@@ -129,4 +130,65 @@
         e_content.addClass('none').eq(index).removeClass('none')
     });
 
+}()
+
+movehtml({
+    element: $("#note"),
+    delay: 2000
+})
+
+! function() {
+    var elements = $(".J_number");
+    var timer = null
+    var win = $(window)
+    win.scroll(function(event) {
+        clearTimeout(timer)
+        timer = setTimeout(function() {
+            var top = win.scrollTop()
+            var height = win.height()
+            elements.each(function(index, el) {
+                var _this = $(this)
+                if (top + height > _this.offset().top) {
+                    var _tmp = _this.prev().children()
+                    var _strong = _this.find('strong')
+                    _tmp.css({
+                        width: _tmp.data('width')
+                    })
+                    if (_strong.data('num')) {
+                        (new CountUp(_strong[0], 0, _strong.data('num'), 0, 2.5)).start()
+                        _strong.removeData('num')
+                        _strong.data('num', 0)
+                    }
+                }
+            });
+        }, 100)
+    });
+}()
+
+! function() {
+    var elements = $('#J_progress')
+    var span = elements.find('span')
+    var num = elements.data('num')
+    var _step = 0
+    var time = time || 2000
+    var timeOut = null
+    var base = Math.floor(time / num);
+    (new CountUp(span[0], 0, num, 0, 2.5)).start()
+
+    function easeOutExpo(t, b, c, d) {
+        return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
+    }
+
+    function count() {
+        _step++
+        if (num >= _step) {
+            timeOut = setTimeout(function() {
+                elements[0].className = "cRed em" + Math.floor(_step/5)
+                count()
+            }, easeOutExpo(_step, 0, base, 100))
+        } else {
+            clearTimeout(timeOut)
+        }
+    }
+    count()
 }()
