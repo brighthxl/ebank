@@ -422,7 +422,8 @@ movehtml({
     var elements = $(".J_number");
     var timer = null
     var win = $(window)
-    win.scroll(function(event) {
+
+    function load() {
         clearTimeout(timer)
         timer = setTimeout(function() {
             var top = win.scrollTop()
@@ -443,7 +444,10 @@ movehtml({
                 }
             });
         }, 100)
-    });
+
+    }
+    win.scroll(load).resize(load)
+    load()
 }()
 
 ! function() {
@@ -464,7 +468,7 @@ movehtml({
         _step++
         if (num >= _step) {
             timeOut = setTimeout(function() {
-                elements[0].className = "cRed em" + Math.floor(_step/5)
+                elements[0].className = "cRed em" + Math.floor(_step / 5)
                 count()
             }, easeOutExpo(_step, 0, base, 100))
         } else {
