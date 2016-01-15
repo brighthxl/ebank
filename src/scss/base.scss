@@ -49,7 +49,7 @@ em{font-style: normal;}
 }
 
 .p-toper {
-    height: 36px;background: #f9f9f9;border-bottom: 1px solid $border;
+    height: 36px;background: #f9f9f9;border-bottom: 1px solid $border;min-width: $width;
     .content {
         dt {
             line-height: 36px;
@@ -81,6 +81,12 @@ em{font-style: normal;}
     height: 76px;
     .logo {
         padding-top: 14px;
+        dt{
+            width: 183px;float: left;
+        }
+        dd{
+            float: left;width: 170px;
+        }
     }
     .login {
         float: right;padding-top: 22px;width: 162px;overflow: hidden;
@@ -113,7 +119,7 @@ em{font-style: normal;}
 
 
 .p-login{
-    padding:22px 25px;width: 262px;overflow: hidden;background: #fff;border-radius: 8px;
+    padding:22px 25px;width: 262px;overflow: hidden;background: #fff;border-radius: 8px;border:1px solid $border;
     h2{
         height: 24px;font-size: 16px;font-weight: 400;
     }
@@ -192,7 +198,7 @@ em{font-style: normal;}
 }
     
 .p-menu{
-    background: $red;
+    background: $red;min-width: $width;
     ul{
         overflow: hidden;
     }
@@ -289,4 +295,14 @@ em{font-style: normal;}
 
 .u-button-2{
     background: #e3e3e3;color:#7d7d7d;
+}
+
+.p-gettop{
+    position: fixed;bottom: 100px;right: 100px;z-index: 10;
+    a{
+        display:block;width: 60px;height: 60px;line-height: 60px;font-size: 40px;text-align: center;background: #d8d8d8;color: #fff;font-family: "iconfont";margin-bottom: 10px;
+        &:hover{
+            background: $hover;
+        }
+    }
 }

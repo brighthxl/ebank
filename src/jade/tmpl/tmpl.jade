@@ -31,12 +31,15 @@ html
 						a(href="") 帮助中心
 					em.app
 						a(href="") 
-							span &#xe64a;
+							span.f20 &#xe64a;
 							|手机客户端
 		.p-header.p-w
-			.logo.left
-				a(href="")
-					img(src="static/img/logo.png")
+			dl.logo.left
+				dt
+					a(href="")
+						img(src="static/img/logo.png")
+				dd
+					img(src="static/img/slogan.png")
 			dl.login.right
 				dt
 					a(href="javascript:;" onclick="login(this);") 登录
@@ -129,13 +132,13 @@ html
 						a(target="_blank" href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.yibankclub.com&lang=zh_cn")
 						a.a2(target="_blank" href="https://credit.szfw.org/CX20150129006526006627.html")
 				.code.right
-					ul
-						li
-							a(href="") &#xf0002;
-						li
-							a(href="") &#xe7f0;
-						li
-							a(href="") &#xe66e;
+					//- ul
+					//- 	li
+					//- 		a(href="") &#xf0002;
+					//- 	li
+					//- 		a(href="") &#xe7f0;
+					//- 	li
+					//- 		a(href="") &#xe66e;
 					dl
 						dt 手机客户端
 						dd
@@ -147,6 +150,11 @@ html
 								img(src="static/img/base_icon02.png", alt="")
 								strong
 									|Android
+		.p-gettop#J_gettop
+			a(href="") &#xf0002;
+			a(href="") &#xe7f0;
+			a(href="") &#xe66e;
+			a(href="") &#xe66e;
 		script(src="#{static}/js/base.js?=#{version}")
 		if jsname
 			script(src="#{static}/js/#{jsname}.js?=#{version}")

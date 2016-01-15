@@ -363,45 +363,6 @@ var countUp = (function(root, factory) {
 
 
 ! function() {
-    var list = $('#list')
-    var tpl = list.find('script').html()
-
-    function render(arr) {
-        if (arr.length) {
-            //list.html(tmpl(tpl, arr))
-        }
-    }
-
-    function loadContent() {
-        $.ajax({
-            url: 'http://m.jindanlicai.com/Share_news/get_news_list',
-            dataType: 'jsonp',
-            timeout: 15000,
-            data: {
-                limit: 10,
-                offset: 0
-            },
-            success: function(result) {
-                render(result.list)
-            },
-            complete: function(request, stauts) {
-                if (stauts == 'timeout') {
-                    console.log('网络超时，请重新操作')
-                }
-            },
-            error: function(request, stauts) {
-                if (stauts == 'error') {
-                    console.log('请求错误，请检查网络')
-                }
-            }
-        })
-    }
-
-    loadContent()
-}()
-
-
-! function() {
     var e_title = $('#fifth_title').find('li')
     var e_content = $('#fifth_content').find('div')
 
@@ -414,8 +375,7 @@ var countUp = (function(root, factory) {
 }()
 
 movehtml({
-    element: $("#note"),
-    delay: 2000
+    element: $("#note")
 })
 
 ! function() {

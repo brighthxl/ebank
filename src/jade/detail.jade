@@ -1,0 +1,163 @@
+extend tmpl/tmpl
+
+//. 页面配置
+block config
+  -var title = "首页"
+  -var cssname ="detail"
+  -var jsname = "detail"
+  -var financial = true
+
+block content
+  .m-under.p-w
+      .m_tip
+        b.fb 央票通
+        p.f18 央企支付信    应收帐款    双重闭环
+        span.f18.c4 100元起投-100元递增
+      .m_product
+        .m_product_lf
+          h2.f18 央票通【1023】央企∙中船重工支付担保融资第9期
+          ul.m_shou.f14
+            li.w1
+              i 年化收益
+              b
+                | 10.00
+                span.f14 %
+            li.w2
+              i 项目期限
+              b
+                | 165
+                span.f14 天
+            li
+              i 项目金额
+              b
+                | 90,000
+                span.f14 元
+          ul.m_slif.f16
+            li 还款方式 : 到期还本付息
+            li 剩余时间 : 4天10时58分
+            li 保障方式 : 中船重工
+            li
+              | 项目进度：
+              em
+                span
+              strong.f12 45.24%
+        .m_rg.m_rgtm
+          dl.m_tm
+            dt.f14 产品到期时间：2016年4月11日
+            dd.cRed.f18 投资人数: 200人
+          .m_btun
+            a.f18(href='') 还款中·查看其他产品
+
+        .m_rg.m_rgy
+          .m_kt.f18
+            | 剩余可投：
+            span.f24 567,300
+            |  元
+          dl.m_sr.f14
+            dt
+              | 账户余额：29,300 元
+              a.cRed(href='') 充值
+            dd
+              input(type='text', value='', placeholder='请输入可投资金额')
+              span 元
+              i 全额
+          ul.f14
+            li
+              span.cRed.right 2.65元
+              label.left
+                input.left(type='radio', value='')
+                | 使用红包
+            li.cRed 投资金额为100的整数倍
+          .m_btun
+            a.f18(href='') 立即投资
+            i.f12
+              | 投资10000元，预计收益
+              span.cRed 25.41
+              | 元
+        .m_rg.m_rgw
+          .m_kt.f18
+            | 剩余可投：
+            span.f24 567,300
+            |  元
+          dl.m_sr.f14
+            dt
+              | 账户余额：
+              a.cRed(href='') 登录
+              | 后查看
+            dd
+              input(type='text', value='', placeholder='请输入可投资金额')
+              span 元
+          .m_btun
+            a.f18(href='') 立即投资
+            i.f12
+              | 投资10000元，预计收益
+              span.cRed 25.41
+              | 元
+      .m_ulist
+        ul.m_utop.f18
+          li.on 项目描述
+          li 企业信息
+          li 投资记录
+          li 相关资料
+          li 项目动态
+        ul.m_ubox.f12
+          li
+            | 项目介绍：
+            br
+            | 基础资产为发行人与中船重工物资贸易集团有限公司下属子公司签订的采购合同工项下的应收账款收益权；
+            br
+            br
+            | 还款来源：
+            br
+            br
+            | 本项目还款来源为发行人与中船重工物资贸易集团有限公司下属子公司签订的采购合同项下的货款，付款人为中船重工物资贸易集团有限公司下属子公司；
+            br
+            | 中船重工物资贸易集团有限公司是中国船舶重工集团公司所属全资子公司，注册资金8亿元人民币，集团总资产超过200亿元，2014年实现销售收入700亿元，
+            br
+            | 拥有控股公司有24家，从业员1000余名，是我国船舶工业领域最大的物资供应商；
+            br
+            br
+            | 资金用途：
+            br
+            | 发行人融资用于补充流动资金。
+            br
+            br
+            | 到期资金偿付保障：
+            br
+            br
+            | 1、 中船重工物资贸易集团有限公司下属子公司支付货款作为本次项目到期偿付资金；
+            br
+            | 2、发行人为本次产品提供到期回购担保；
+            br
+            | 3、天津巨石能源工程服务有限公司为发行人此次所发行的产品的到期回购/
+            br
+            | 付资金提供无条件的不可撤销的连带责任保证担保；
+            br
+            | 4、上海亿办商业保理有限公司对发行人到期兑付及全额回购提供有追索权保理；
+            br
+            | 5、永诚财产保险股份有限公司提供网络账户资金安全责任保险；
+            br
+            br
+            | 层层保障确保智慧投资人到期本息安全兑付。
+            br
+            br
+            | 备注：产品预计到期日为2016年4月11日，可以提前募集成立。若产品提前募集成立，项目期限不变。
+    .red-envelope
+      h4.f14 选择红包
+      .f12
+        ul
+          li 返现比例
+          li 最高金额
+          li 有效期至
+          li 操作
+        ul
+          li 0.5%
+          li 50元
+          li 2016.4
+          li
+            a.cRed(href='') 选择
+        ul
+          li 0.5%
+          li 50元
+          li 2016.4
+          li

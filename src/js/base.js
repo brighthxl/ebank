@@ -67,18 +67,33 @@ var tmpl = EB_GET('lib/tmpl.js')
         clearTimeout(timer)
         var pos = source.offset()
         menu.css({
-            top:pos.top + source.height(),
-            left : pos.left,
+            top: pos.top + source.height(),
+            left: pos.left,
         }).slideDown();
     }
 
     function hide() {
         timer = setTimeout(function() {
             menu.slideUp()
-        },100)
+        }, 100)
     }
 
-    source.hover(show,hide)
-    menu.hover(show,hide) 
-    console.log(source,menu)
+    source.hover(show, hide)
+    menu.hover(show, hide)
+    console.log(source, menu)
+}()
+
+
+! function() {
+    var win = $(window)
+
+    function init() {
+        $('#J_gettop').css({
+            left: win.width() / 2 + 510
+        })
+    }
+
+    init()
+
+    win.resize(init);
 }()
