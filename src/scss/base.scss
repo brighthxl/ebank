@@ -78,7 +78,7 @@ em{font-style: normal;}
 
 }
 .p-header {
-    height: 76px;
+    height: 76px;overflow: hidden;
     .logo {
         padding-top: 14px;
         dt{
@@ -89,7 +89,7 @@ em{font-style: normal;}
         }
     }
     .login {
-        float: right;padding-top: 22px;width: 162px;overflow: hidden;
+        padding-top: 22px;width: 162px;overflow: hidden;
         dt,dd{
             float: left;
         }

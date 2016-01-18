@@ -195,7 +195,6 @@ var tmpl = define(function() {
 
     source.hover(show, hide)
     menu.hover(show, hide)
-    console.log(source, menu)
 }()
 
 

@@ -80,7 +80,6 @@ var tmpl = EB_GET('lib/tmpl.js')
 
     source.hover(show, hide)
     menu.hover(show, hide)
-    console.log(source, menu)
 }()
 
 
