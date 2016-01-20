@@ -197,7 +197,17 @@ i {
         }
     }
     .m_ubox {
-        padding: 10px 26px 40px;width: 944px;overflow: hidden;line-height: 16px;color: #656565;
+        overflow: hidden;line-height: 16px;color: #656565;
+        .context {
+            padding: 10px 26px 40px;
+        }
+        .u-table {
+            font-size: 14px;line-height: 43px;margin-top: 26px;width: 100%;
+            .tr-title {
+                background-color: #fff9f9;font-size: 12px;
+            }
+            
+        }
     }
 }
 
