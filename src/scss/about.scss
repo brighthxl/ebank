@@ -39,19 +39,8 @@
 				float: right;
 			}
 		}
-		.page{
-			text-align: right;height: 64px;width: 760px;padding-top: 17px;
-			a,span{
-				margin: 0 9px;display: inline-block;line-height: 20px;
-			}
-			span{
-				background: $red;color:#fff;padding:0 6px;
-			}
-			a{
-				&:hover{
-					text-decoration: underline;
-				}
-			}
+		.p-page{
+			width: 760px;
 		}
 	}
 	.gaikuang{

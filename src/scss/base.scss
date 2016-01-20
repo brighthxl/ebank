@@ -1,3 +1,4 @@
+@import 'lib/_reset';
 @import 'lib/_public';
 body{
     font-size: 14px;color:$black;
@@ -17,6 +18,9 @@ em{font-style: normal;}
 .left{float: left;}
 .right{float: right;}
 .fa{font-family:Arial}
+.ftc{text-align: center;}
+.ftr{text-align: right;}
+.ftl{text-align: left;}
 
 @include setColor(cRed,$red)
 @include setColor(cBlue,$blue)
@@ -303,6 +307,21 @@ em{font-style: normal;}
         display:block;width: 60px;height: 60px;line-height: 60px;font-size: 40px;text-align: center;background: #d8d8d8;color: #fff;font-family: "iconfont";margin-bottom: 10px;
         &:hover{
             background: $hover;
+        }
+    }
+}
+
+.p-page{
+    height: 64px;padding-top: 17px;
+    a,span{
+        margin: 0 9px;display: inline-block;line-height: 20px;
+    }
+    span{
+        background: $red;color:#fff;padding:0 6px;
+    }
+    a{
+        &:hover{
+            text-decoration: underline;
         }
     }
 }

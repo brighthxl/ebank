@@ -37,7 +37,7 @@
 }
 
 .m-list{
-	border:1px solid $border;width: 998px;overflow: hidden;margin-bottom: 30px;
+	border:1px solid $border;width: 998px;overflow: hidden;margin-bottom: 15px;
 	.title{
 		line-height: 40px;background: #f8f9fa;width: 100%;overflow: hidden;border-bottom: 1px solid $border;
 		li{
@@ -59,7 +59,7 @@
 	.item{
 		height: 73px;border-bottom: 1px solid $border;width: 950px;margin: 0 auto;
 		li{
-			float: left;padding-top: 24px;
+			float: left;padding-top: 24px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;
 			&.li1{
 				width: 295px;padding-top: 26px;
 			}
@@ -90,21 +90,6 @@
 			&.li6{
 				padding-top: 21px;
 			}
-		}
-	}
-}
-
-.m-page{
-	text-align: center;height: 64px;
-	a,span{
-		margin: 0 9px;display: inline-block;line-height: 20px;
-	}
-	span{
-		background: $red;color:#fff;padding:0 6px;
-	}
-	a{
-		&:hover{
-			text-decoration: underline;
 		}
 	}
 }
