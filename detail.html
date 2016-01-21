@@ -58,6 +58,33 @@
         <div class="signup">没有账号？ <a class="cBlue">免费注册</a></div>
       </form>
     </div>
+    <div id="J_login2" class="p-login none">
+      <form>
+        <h2>登录</h2>
+        <p class="err cRed">用户名与密码不匹配，请重新输入。</p>
+        <div class="item">
+          <input type="text"><span>请输入手机号／邮箱</span>
+        </div>
+        <div class="item">
+          <input type="password"><span>请输入密码</span>
+        </div>
+        <dl class="code">
+          <dt>
+            <input type="text"><span>请输入验证码</span>
+          </dt>
+          <dd><img src="" alt=""></dd>
+        </dl>
+        <dl class="remember">
+          <dt>
+            <input type="checkbox">
+            <label>记住用户名</label>
+          </dt>
+          <dd><a class="cBlue">忘记密码</a></dd>
+        </dl>
+        <div class="button"><a class="u-button">登录</a></div>
+        <div class="signup">没有账号？ <a class="cBlue">免费注册</a></div>
+      </form>
+    </div>
     <div id="J_islogin_layer" class="p-islogin none"><a href="">进入账户</a><a href="">充值</a><a href="">提现</a><a href="">退出</a></div>
     <div class="p-menu f18">
       <ul class="content p-w">
@@ -115,7 +142,7 @@
         <div class="m_rg m_rgw">
           <div class="m_kt f18">剩余可投：<span class="f24">567,300</span> 元</div>
           <dl class="m_sr f14">
-            <dt>账户余额：<a href="" class="cRed">登录</a>后查看</dt>
+            <dt>账户余额：<a href="javascript:;" onclick="login(this);" class="cRed">登录</a>后查看</dt>
             <dd>
               <input type="text" value="" placeholder="请输入可投资金额"><span>元</span>
             </dd>

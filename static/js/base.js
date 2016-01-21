@@ -132,6 +132,7 @@ var tmpl = define(function() {
 
 ! function() {
     var ele = $('#J_login')
+    var ele2 = $('#J_login2')
     var show = false
 
     function login(self) {
@@ -155,7 +156,7 @@ var tmpl = define(function() {
                 }).slideDown();
             }
         } else {
-            layer(ele.show())
+            layer(ele2.show())
         }
     }
 

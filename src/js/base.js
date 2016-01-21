@@ -17,6 +17,7 @@ var tmpl = EB_GET('lib/tmpl.js')
 
 ! function() {
     var ele = $('#J_login')
+    var ele2 = $('#J_login2')
     var show = false
 
     function login(self) {
@@ -40,7 +41,7 @@ var tmpl = EB_GET('lib/tmpl.js')
                 }).slideDown();
             }
         } else {
-            layer(ele.show())
+            layer(ele2.show())
         }
     }
 
