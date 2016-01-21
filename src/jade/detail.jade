@@ -8,6 +8,7 @@ block config
   -var financial = true
 
 block content
+  .m-mask#J_mask
   .m-under.p-w
       .m_tip
         b.fb 央票通
@@ -40,13 +41,14 @@ block content
               | 项目进度：
               em
                 span
-              strong.f12 45.24%
+              strong.f12#J_progress(data-num="75") 45.24
+              strong.f12 %
         .m_rg.m_rgtm
           dl.m_tm
             dt.f14 产品到期时间：2016年4月11日
             dd.cRed.f18 投资人数: 200人
           .m_btun
-            a.f18(href='') 还款中·查看其他产品
+            a.u-button.f18(href='') 还款中·查看其他产品
 
         .m_rg.m_rgy
           .m_kt.f18
@@ -67,11 +69,11 @@ block content
                 strong#J_usedNum 0
                 |元
               .left
-                input#J_used.left(type='checkbox', value='')
-                label(for="J_used") 使用红包
+                em#J_used(data-check="&#xe609;") &#xe608;
+                |&nbsp;使用红包
             li.cRed 投资金额为100的整数倍
           .m_btun
-            a.f18(href='') 立即投资
+            a.u-button.f18(href='') 立即投资
             i.f12
               | 投资10000元，预计收益
               span.cRed 25.41
@@ -90,7 +92,7 @@ block content
               input(type='text', value='', placeholder='请输入可投资金额')
               span 元
           .m_btun
-            a.f18(href='') 立即投资
+            a.u-button.f18(href='') 立即投资
             i.f12
               | 投资10000元，预计收益
               span.cRed 25.41
@@ -310,7 +312,7 @@ block content
             | 备注：产品预计到期日为2016年4月11日，可以提前募集成立。若产品提前募集成立，项目期限不变。
     .red-envelope#J_red-envelope
       h4.f14 选择红包
-      .f12
+      .f12.table
         ul
           li 返现比例
           li 最高金额
@@ -327,3 +329,4 @@ block content
           li 50元
           li 2016.4
           li
+      .text.f12 返现金额=投资金额*返现比例，每次只能选择一个红包，不可叠加使用。返现金额以最高金额为上限。
