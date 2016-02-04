@@ -53,10 +53,10 @@ em{font-style: normal;}
 }
 
 .p-toper {
-    height: 36px;background: #f9f9f9;border-bottom: 1px solid $border;min-width: $width;
+    font-size: 12px;height: 36px;background: #f9f9f9;border-bottom: 1px solid $border;min-width: $width;
     .content {
         dt {
-            line-height: 36px;
+            line-height: 32px;
             span{font-family: "iconfont";}
         }
         dd {
@@ -84,7 +84,7 @@ em{font-style: normal;}
 .p-header {
     height: 76px;overflow: hidden;
     .logo {
-        padding-top: 14px;
+        
         dt{
             width: 183px;float: left;
         }
@@ -202,7 +202,7 @@ em{font-style: normal;}
 }
     
 .p-menu{
-    background: $red;min-width: $width;
+    font-size: 16px;background: $red;min-width: $width;
     ul{
         overflow: hidden;
     }
@@ -210,7 +210,7 @@ em{font-style: normal;}
         float: left;
     }
     a{
-        display:block;width: 128px;height: 46px;line-height: 46px;text-align: center;color:#fff;@include tran();
+        display:block;width: 128px;height: 40px;line-height: 40px;text-align: center;color:#fff;@include tran();
         &.on,&:hover{
             background: $hover;
         }
@@ -291,7 +291,7 @@ em{font-style: normal;}
 }
 
 .u-button,.u-button-2{
-    background: $red;@include tran();display: inline-block;width: 115px;line-height: 36px;text-align: center;border-radius: 5px;color: #fff;height: 36px;
+    background: $red;@include tran();display: inline-block;width: 130px;line-height: 36px;text-align: center;border-radius: 5px;color: #fff;height: 36px;
 }
 .u-button:hover{
     background: $hover;color: #fff;
@@ -302,7 +302,7 @@ em{font-style: normal;}
 }
 
 .p-gettop{
-    position: fixed;top: 200px;right: 100px;z-index: 10;
+    position: fixed;top: 300px;right: 100px;z-index: 10;
     a{
         display:block;width: 60px;height: 60px;line-height: 60px;font-size: 40px;text-align: center;background: #d8d8d8;color: #fff;font-family: "iconfont";margin-bottom: 10px;position: relative;-webkit-transform: translateZ(0);transform: translateZ(0);
         &:hover{

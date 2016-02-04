@@ -102,16 +102,16 @@
 			li{
 				float: left;color:#999;
 				&.number{
-					width: 174px;
+					width: 205px;
 				}
 				&.days{
-					width: 173px;
+					width: 175px;
 					em{
 						color:#656565;
 					}
 				}
 				&.progress{
-					width: 125px;
+					width: 75px;
 					em{
 						background:url(../img/index_progress.png) no-repeat;background-position: 0 -784px;font-size: 14px;display:block;width:56px;height:56px;text-align: center;line-height: 56px;
 					}
@@ -212,7 +212,7 @@
 				float: right;
 			}
 			span{
-				font-size: 24px;margin:0 0 0 10px;color: #656565;
+				font-size: 28px;margin:0 0 0 10px;color: #656565;
 				&.cRed{
 					color:$red;
 				}
@@ -303,13 +303,13 @@
 		padding-left: 18px;line-height: 42px;
 	}
 	ul{
-		padding-left: 34px;width: 1200px;overflow: hidden;padding-bottom: 10px;
+		padding-left: 34px;width: 1000px;overflow: hidden;padding-bottom: 10px;
 	}
 	li{
-		float: left;width: 334px;padding-bottom: 10px;
+		float: left;width: 240px;padding-bottom: 10px;
 	}
 	img{
-		width: 258px;height: 55px;border:1px solid $border;
+		width: 210px;border:1px solid $border;height:71px;
 	}
 }
 
